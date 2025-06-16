@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 AI Apartment Finder
 
-## Getting Started
+An intelligent student apartment rental platform built with Next.js 15, TypeScript, and OpenAI GPT-4o that generates personalized apartment listings based on user criteria.
 
-First, run the development server:
+![AI Apartment Finder](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- 🤖 **AI-Powered Listing Generation** - Generate realistic apartment listings using OpenAI GPT-4o
+- 🎨 **Modern UI/UX** - Beautiful dark theme with shadcn/ui components
+- 🔍 **Advanced Filtering** - Search by location, price, university, amenities
+- 📱 **Responsive Design** - Works perfectly on all devices
+- ⚡ **Real-time Updates** - New AI-generated listings appear instantly
+- 📞 **Contact Integration** - Direct landlord communication
+- 🏫 **Student-Focused** - Specifically designed for student housing needs
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 15 with Turbopack
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **AI Integration:** OpenAI AI SDK with GPT-4o
+- **Schema Validation:** Zod
+- **Package Manager:** pnpm
+- **Database:** In-memory (expandable to your preferred DB)
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SirazSium84/apartment-finder-ai.git
+   cd apartment-finder-ai
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+3. **Set up environment variables:**
+   ```bash
+   cp .env.local.example .env.local
+   ```
+   Add your OpenAI API key to `.env.local`:
+   ```
+   OPENAI_API_KEY=your-openai-api-key-here
+   ```
+
+4. **Run the development server:**
+   ```bash
+   pnpm dev
+   ```
+
+5. **Open your browser:**
+   Navigate to `http://localhost:3000`
+
+## 🎯 How It Works
+
+1. **Browse Existing Listings** - View pre-loaded apartment listings with filtering options
+2. **Generate Custom Listings** - Click "Generate with AI" and fill out your criteria
+3. **AI Magic** - OpenAI GPT-4o creates realistic listings matching your preferences
+4. **Instant Results** - New listings appear at the top of the page
+5. **Contact Landlords** - Use built-in contact features to reach out
+
+## 📸 Screenshots
+
+*Add screenshots of your application here*
+
+## 🔧 API Endpoints
+
+- `GET /` - Main apartment listings page
+- `POST /api/generate-listings` - AI-powered listing generation
+- `POST /api/chat` - Chat functionality (expandable)
+
+## 🏗️ Project Structure
+
+```
+apartment-finder-ai/
+├── app/
+│   ├── api/
+│   │   ├── generate-listings/
+│   │   └── chat/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   └── ui/
+├── lib/
+│   └── utils.ts
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are welcome! Feel free to:
+- 🐛 Report bugs
+- 💡 Suggest new features
+- 🔧 Submit pull requests
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 License
 
-## Learn More
+This project is open source and available under the [MIT License](LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Md Siraz uz Zaman**
+- GitHub: [@SirazSium84](https://github.com/SirazSium84)
+- Project Link: [apartment-finder-ai](https://github.com/SirazSium84/apartment-finder-ai)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙏 Acknowledgments
 
-## Deploy on Vercel
+- [OpenAI](https://openai.com/) for GPT-4o API
+- [Vercel](https://vercel.com/) for Next.js framework
+- [shadcn/ui](https://ui.shadcn.com/) for beautiful components
+- [Tailwind CSS](https://tailwindcss.com/) for styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ **Star this repository if you found it helpful!**
